@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 size_t message_len = strlen(message);
 write(2, message, message_len);
 return (1);
