@@ -1,6 +1,7 @@
 .vscode/tasks.json
 *.plist
 */Resources
+*.dSYM
 0x01-variables_if_else_while/0-positive_or_negative.dSYM/Contents/Info.plist
 0x01-variables_if_else_while/0-positive_or_negative.dSYM/Contents/Resources/DWARF/0-positive_or_negative
 0x01-variables_if_else_while/1-last_digit.dSYM/Contents/Info.plist
@@ -8,3 +9,4 @@
 0x01-variables_if_else_while/2-print_alphabet.dSYM/Contents/Resources/DWARF/2-print_alphabet
 0x01-variables_if_else_while/3-print_alphabets.dSYM/Contents/Resources/DWARF/3-print_alphabets
 0x01-variables_if_else_while/4-print_alphabt.dSYM/Contents/Resources/DWARF/4-print_alphabt
+0x01-variables_if_else_while/5-print_numbers.dSYM/Contents/Resources/DWARF/5-print_numbers
