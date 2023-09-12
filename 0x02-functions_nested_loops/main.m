@@ -1,6 +1,6 @@
 #include "main.h"
 #include "_putchar.c"
-#include "3-islower.c"
+#include "4-isalpha.c"
 
 /**
  * main - application entry point
@@ -9,15 +9,17 @@
 */
 int main(void)
 {
-	int r;
-    r = _islower('H');
+     int r;
+
+	 r = _isalpha('H');
     _putchar(r + '0');
-    r = _islower('o');
+    r = _isalpha('o');
     _putchar(r + '0');
-    r = _islower(108);
+    r = _isalpha(108);
+    _putchar(r + '0');
+    r = _isalpha(';');
     _putchar(r + '0');
     _putchar('\n');
-
-   
+    return (0);
     return (0);
 }
