@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include "_putchar.c"
-#include "8-24_hours.c"
+#include "9-times_table.c"
 
 /**
  * main - application entry point
@@ -10,6 +10,6 @@
 */
 int main(void)
 {
-    jack_bauer();
+    times_table();
     return (0);
 }
