@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - application entry point
@@ -7,6 +8,8 @@
 */
 int main(void)
 {
-	printf("_putchar\n");
+	char statment[] = "_putchar\n";
+
+	print(statment);
 	return (0);
 }
