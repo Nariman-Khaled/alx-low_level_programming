@@ -1,11 +1,7 @@
-#include <unistd.h>
-#include <string.h>
-/**
- * This is a header file
- */
+#ifndef _main_h_
+#define _main_h_
 
-void print(char c[])
-{
-    write(1, c, strlen(c));
-    return;
-}
+void print(char c[]);
+int _putchar(char c);
+
+#endif
