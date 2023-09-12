@@ -16,15 +16,22 @@ void times_table(void)
 		{
 			result = base * index;
 
-			_putchar(' ');
-			if (result / 10 != 0)
+			if (index == 0)
 			{
-				_putchar(result / 10 + '0');
-			} else
+				_putchar('0');
+			}
+			else
 			{
 				_putchar(' ');
+				if (result / 10 != 0)
+				{
+					_putchar(result / 10 + '0');
+				} else
+				{
+					_putchar(' ');
+				}
+				_putchar(result % 10 + '0');
 			}
-			_putchar(result % 10 + '0');
 			if (index != 9)
 			{
 				_putchar(',');
