@@ -1,6 +1,6 @@
 #include "main.h"
 #include "_putchar.c"
-#include "4-isalpha.c"
+#include "5-sign.c"
 
 /**
  * main - application entry point
@@ -9,17 +9,27 @@
 */
 int main(void)
 {
-     int r;
+    int r;
 
-	 r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
+    r = print_sign(98);
+    _putchar(',');
+    _putchar(' ');
     _putchar(r + '0');
     _putchar('\n');
-    return (0);
+    r = print_sign(0);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    r = print_sign(0xff);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    r = print_sign(-1);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
     return (0);
 }
