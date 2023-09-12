@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include "_putchar.c"
-#include "9-times_table.c"
+#include "10-add.c"
 
 /**
  * main - application entry point
@@ -10,6 +10,9 @@
 */
 int main(void)
 {
-    times_table();
+    int n;
+
+    n = add(89, 9);
+    printf("%d\n", n);
     return (0);
 }
