@@ -19,6 +19,7 @@ void print_to_98(int n)
 		}
 		printDigits(tmp);
 		_putchar(',');
+		_putchar(' ');
 		if (n > 98)
 		{
 			n--;
