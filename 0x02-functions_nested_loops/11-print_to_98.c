@@ -39,6 +39,7 @@ void printDigits(int num)
 {
 	char buffer[20];
 	int length = 0;
+	int i;
 
 	while (num > 0)
 	{
@@ -47,7 +48,7 @@ void printDigits(int num)
 		length++;
 	}
 
-	for (int i = length - 1; i >= 0; i--)
+	for (i = length - 1; i >= 0; i--)
 	{
 		_putchar(buffer[i]);
 	}
