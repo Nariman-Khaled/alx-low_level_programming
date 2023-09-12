@@ -8,8 +8,6 @@
 */
 int main(void)
 {
-	char statment[] = "_putchar\n";
-
 	print_alphabet();
 	return (0);
 }
