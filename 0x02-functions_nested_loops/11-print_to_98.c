@@ -42,16 +42,23 @@ void printDigits(int num)
 	int length = 0;
 	int i;
 
-	while (num > 0)
+	if (num == 0)
 	{
-		buffer[length] = '0' + (num % 10);
-		num /= 10;
-		length++;
+		_putchar('0');
 	}
-
-	for (i = length - 1; i >= 0; i--)
+	else
 	{
-		_putchar(buffer[i]);
+		while (num > 0)
+		{
+			buffer[length] = '0' + (num % 10);
+			num /= 10;
+			length++;
+		}
+
+		for (i = length - 1; i >= 0; i--)
+		{
+			_putchar(buffer[i]);
+		}
 	}
 }
 
