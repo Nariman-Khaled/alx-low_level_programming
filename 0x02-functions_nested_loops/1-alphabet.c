@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * main - application entry point
@@ -16,5 +17,11 @@ int main(void)
 */
 void print_alphabet(void)
 {
-	print("abcdefghijklmnopqrstuvwxyz\n");
+	char ascii = 'a';
+
+	for (ascii = 'a'; ascii <= 'z'; ascii++)
+	{
+		_putchar(ascii);
+	}
+	_putchar('\n');
 }
