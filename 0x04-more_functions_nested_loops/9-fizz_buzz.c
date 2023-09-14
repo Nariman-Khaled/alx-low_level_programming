@@ -25,7 +25,7 @@ int main(void)
 			printf("%d ", number);
 		}
 	}
-	printf("Buzz ");
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
