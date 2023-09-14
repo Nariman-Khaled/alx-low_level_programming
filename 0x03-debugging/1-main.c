@@ -1,24 +1,23 @@
 #include <stdio.h>
+#include "2-largest_number.c"
 
 /**
-* main - causes an infinite loop
-* Return: 0
-*/
+ * main - causes an infinite loop
+ * Return: 0
+ */
 
 int main(void)
 {
-	int i;
+	int a, b, c;
+	int largest;
 
-	printf("Infinite loop incoming :(\n");
+	a = 972;
+	b = 1298;
+	c = 100;
 
-	i = 0;
+	largest = largest_number(a, b, c);
 
-	/* while (i < 10) */
-	/* { */
-	/* putchar(i); */
-	/* } */
-
-	printf("Infinite loop avoided! \\o/\n");
+	printf("%d is the largest number\n", largest);
 
 	return (0);
 }
