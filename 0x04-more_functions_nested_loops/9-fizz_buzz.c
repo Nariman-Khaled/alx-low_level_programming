@@ -28,5 +28,5 @@ void fizz_buzz(void)
 			printf("%d ", number);
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
