@@ -18,3 +18,5 @@ _putchar.c
 0x04-more_functions_nested_loops/main.m
 .vscode/settings.json
 0x03-debugging/1-main.c
+.vscode/c_cpp_properties.json
+0x05-pointers_arrays_strings/main.m
