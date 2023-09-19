@@ -14,7 +14,7 @@ void rev_string(char *s)
 		count++;
 	}
 
-	for (index = 0; index <= (count / 2); index++)
+	for (index = 0; index < (count / 2); index++)
 	{
 		int tmpIndex = (count - index - 1);
 		char tmpValue = *(s + tmpIndex);
