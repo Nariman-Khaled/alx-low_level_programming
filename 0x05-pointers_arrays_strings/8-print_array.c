@@ -7,14 +7,21 @@
  *
  * @a: pointer to string
  * @n: number of elements of the array to be printed
-*/
+ */
 void print_array(int *a, int n)
 {
-	int index = 0;
-
-	for (; index < n - 1; index++)
+	if (n > 0)
 	{
-		printf("%i, ", a[index]);
+		int index = 0;
+
+		for (; index < n - 1; index++)
+		{
+			printf("%i, ", a[index]);
+		}
+		printf("%i\n", a[n - 1]);
 	}
-	printf("%i\n", a[n - 1]);
+	else
+	{
+		printf("\n");
+	}
 }
