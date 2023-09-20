@@ -9,7 +9,7 @@
  * @n:number of bytes to copy
  *
  * Return: pointer to the resulting string dest
-*/
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	char *ptr = dest;
@@ -23,10 +23,10 @@ char *_strncat(char *dest, char *src, int n)
 	for (index = 0; index < n; index++)
 	{
 		if (*src == 0)
-			{
-				ptr++;
-				break;
-			}
+		{
+			ptr++;
+			break;
+		}
 
 		*ptr = *src;
 		src++;
