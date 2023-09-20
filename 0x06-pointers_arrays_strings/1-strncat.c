@@ -9,7 +9,7 @@
  * @n:number of bytes to copy
  *
  * Return: pointer to the resulting string dest
- */
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 	char *ptr = dest;
