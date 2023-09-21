@@ -15,8 +15,6 @@ char *_strncpy(char *dest, char *src, int n)
 	char *ptr = dest;
 	int index = 0;
 
-	printf("_strncpy dest: %s \n", dest);
-
 	for (index = 0; index < n; index++)
 	{
 		if (*src == 0)
@@ -31,6 +29,5 @@ char *_strncpy(char *dest, char *src, int n)
 		ptr++;
 	}
 
-	printf("_strncpy end dest: %s \n", dest);
 	return (dest);
 }
