@@ -10,11 +10,16 @@
 */
 char *cap_string(char *str)
 {
-	char *ptr = str;
+	int i;
 
-	while (*ptr != 0)
+	i = 0;
+	if (str[0] >= 'a' && str[0] <= 'z')
 	{
-		switch (*ptr)
+		str[0] = str[0] - 32;
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		switch (str[i])
 		{
 		case ',':
 		case ';':
@@ -29,14 +34,11 @@ char *cap_string(char *str)
 		case ' ':
 		case '\n':
 		case '\t':
-			if (*(ptr + 1) > 96 && *(ptr + 1) < 123)
+			if (str[i + 1] > 96 && str[i + 1] < 123)
 			{
-				ptr++;
-				*ptr = *ptr - 32;
+				str[i + 1] = str[i + 1] - 32;
 			}
 		}
-		ptr++;
 	}
-
 	return (str);
 }
