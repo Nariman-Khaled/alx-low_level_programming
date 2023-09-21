@@ -16,24 +16,24 @@ char *cap_string(char *str)
 	{
 		switch (*ptr)
 		{
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-			case ' ':
-			case '\n':
-			case '\t':
-				if (*(ptr + 1) > 96 && *(ptr + 1) < 123)
-				{
-					ptr++;
-					*ptr = *ptr - 32;
-				}
+		case ',':
+		case ';':
+		case '.':
+		case '!':
+		case '?':
+		case '"':
+		case '(':
+		case ')':
+		case '{':
+		case '}':
+		case ' ':
+		case '\n':
+		case '\t':
+			if (*(ptr + 1) > 96 && *(ptr + 1) < 123)
+			{
+				ptr++;
+				*ptr = *ptr - 32;
+			}
 		}
 		ptr++;
 	}
