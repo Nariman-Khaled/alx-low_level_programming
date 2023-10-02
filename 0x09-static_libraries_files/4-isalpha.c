@@ -1,4 +1,4 @@
-#include "main.h"
+
 
 /**
  * _isalpha - function that checks for alpha character.

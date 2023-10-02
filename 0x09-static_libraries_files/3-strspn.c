@@ -1,14 +1,13 @@
-#include "main.h"
+
 
 /**
- * _strpbrk - locates the first occurrence in the string s
- * of any of the bytes in the string accept
+ * _strspn - finds the first occurrence of a character in s
+ * that is not contained in the set of accept characters
  * @s: String to check in
  * @accept: accepted characters
- * Return:pointer to the byte in s that matches one of the bytes in accept,
- * or NULL if no such byte is found
+ * Return: index of the first character found not accepted.
 */
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int index = 0;
 	unsigned int acceptIndex;
@@ -20,9 +19,13 @@ char *_strpbrk(char *s, char *accept)
 		while (accept[acceptIndex] != '\0')
 		{
 			if (accept[acceptIndex] == s[index])
-				return (&s[index]);
+				break;
 
 			acceptIndex++;
+		}
+		if (accept[acceptIndex] == '\0')
+		{
+			return (index);
 		}
 		index++;
 	}
